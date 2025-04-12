@@ -1,0 +1,38 @@
+.features {
+  margin-top: 16px;
+  .container {
+    display: flex;
+    .features-info {
+      margin-right: 32px;
+      width: 48%;
+      h2 {
+        text-align: left;
+      }
+      .features-text {
+        font-size: 22px;
+        line-height: 1.7;
+        padding-bottom: 40px;
+        span {
+          text-transform: capitalize;
+          font-weight: 600;
+        }
+      }
+    }
+    .features_image {
+      width: 48%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      background: url(./../images/Star_1.png) no-repeat 40% 55%, url(./../images/Star_2.png) no-repeat 98% 8%,
+        url(./../images/Star_3.png) no-repeat 97% 44%;
+      .features_image__item {
+        img {
+          border-radius: 50%;
+        }
+        &:last-child {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
