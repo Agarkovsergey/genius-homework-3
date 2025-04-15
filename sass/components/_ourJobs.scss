@@ -26,6 +26,9 @@
       &:not(:last-child) {
         margin-right: 56px;
       }
+      .icon {
+        fill: $accent-color;
+      }
       .our-jobs__text {
         text-align: center;
       }

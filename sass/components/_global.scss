@@ -53,6 +53,10 @@ h1 {
 a {
   text-decoration: none;
   color: $primary-text-color;
+  transition: color 0.2s ease-out;
+  svg {
+    transition: color 0.2s ease-out;
+  }
   &:hover {
     color: $secondary-text-color;
   }
@@ -112,6 +116,7 @@ address {
   }
 }
 .button {
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
   &:hover,
   &:focus {
     background-color: $accent-color;

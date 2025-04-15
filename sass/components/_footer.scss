@@ -32,7 +32,12 @@
           }
           .socials__link {
             .icon {
-              filter: brightness(0) invert(1);
+              fill: $white-color;
+            }
+          }
+          &:hover {
+            .icon {
+              fill: $accent-color;
             }
           }
         }

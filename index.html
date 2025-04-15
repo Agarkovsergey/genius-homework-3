@@ -78,7 +78,7 @@
           <p class="hero__sub-title">Косметологічна клініка</p>
           <h1 class="hero__title" lang="en">Beauty<br />Zone</h1>
           <div class="hero__btn-block">
-            <button type="button" class="hero__button">Замовити дзвінок</button>
+            <button type="button" class="button hero__button modal-btn-open">Замовити дзвінок</button>
           </div>
           <p class="hero__text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
         </div>
@@ -100,8 +100,22 @@
             </p>
           </div>
           <div class="features_image">
-            <div class="features_image__item"><img src="./images/features1.png" alt="some txt" /></div>
-            <div class="features_image__item"><img src="./images/features2.png" alt="some txt" /></div>
+            <div class="star star_one">
+              <img src="./images/Star_1.png" alt="star" />
+            </div>
+            <div class="star star_two">
+              <img src="./images/Star_2.png" alt="star" />
+            </div>
+            <div class="star star_three">
+              <img src="./images/Star_3.png" alt="star" />
+            </div>
+
+            <div class="features_image__item">
+              <img src="./images/features1.png" alt="some txt" />
+            </div>
+            <div class="features_image__item">
+              <img src="./images/features2.png" alt="some txt" />
+            </div>
           </div>
         </div>
       </section>
@@ -146,16 +160,16 @@
             </div>
             <div class="content-wraper">
               <div class="slider-content">
-                <img src="./images/procedures1.png" alt="" />
+                <img src="./images/procedures1.png" alt="" class="slider-content__image" />
                 <p class="slider-content-text">Маски для обличчя</p>
               </div>
               <div class="slider-content">
-                <img src="./images/procedures2.png" alt="" />
-                <p class="slider-content-text">Маски для обличчя</p>
+                <img src="./images/procedures2.png" alt="" class="slider-content__image" />
+                <p class="slider-content-text">Ін'єкції для обличчя</p>
               </div>
               <div class="slider-content">
-                <img src="./images/procedures3.png" alt="" />
-                <p class="slider-content-text">Маски для обличчя</p>
+                <img src="./images/procedures3.png" alt="" class="slider-content__image" />
+                <p class="slider-content-text">Очищення обличчя</p>
               </div>
             </div>
             <div class="slider-container__arrow">
@@ -163,14 +177,20 @@
             </div>
           </div>
           <ul class="slider-dots">
-            <li class="slider-dots-item">
-              <img src="./images/Ellipse_default.svg" alt="dot" />
+            <li class="slider-dots-item slider-dots-item__current">
+              <svg class="dot-icon" width="11" height="11">
+                <use href="./images/symbol-defs.svg#icon-Ellipse_default"></use>
+              </svg>
             </li>
             <li class="slider-dots-item">
-              <img src="./images/Ellipse_default.svg" alt="dot" />
+              <svg class="dot-icon" width="11" height="11">
+                <use href="./images/symbol-defs.svg#icon-Ellipse_default"></use>
+              </svg>
             </li>
             <li class="slider-dots-item">
-              <img src="./images/Ellipse_default.svg" alt="dot" />
+              <svg class="dot-icon" width="11" height="11">
+                <use href="./images/symbol-defs.svg#icon-Ellipse_default"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -222,7 +242,7 @@
                   class="find-us__input"
                 />
               </div>
-              <button type="submit" class="form__btn-submit">Записатись безкоштовно</button>
+              <button type="submit" class="button form__btn-submit">Записатись безкоштовно</button>
               <p class="copyrights">
                 Натискаючи на кнопку я погоджуюсь
                 <a href="#"> з політикою конфіденційності </a>
@@ -268,7 +288,6 @@
                   <svg class="icon" width="32" height="32">
                     <use href="./images/symbol-defs.svg#icon-telephone-receiver_icon-iconscom_56033"></use>
                   </svg>
-                  <!-- <img src="./images/telephone-receiver_icon-icons.com_56033.svg" alt="" /> -->
                 </a>
               </li>
               <li class="socials__item">
@@ -276,7 +295,6 @@
                   <svg class="icon icon-uit_facebook-f" width="32" height="32">
                     <use href="./images/symbol-defs.svg#icon-uit_facebook-f"></use>
                   </svg>
-                  <!-- <img src="./images/uit_facebook-f.svg" alt="" /> -->
                 </a>
               </li>
               <li class="socials__item">
@@ -284,7 +302,6 @@
                   <svg class="icon" width="32" height="32">
                     <use href="./images/symbol-defs.svg#icon-ph_instagram-logo-light"></use>
                   </svg>
-                  <!-- <img src="./images/ph_instagram-logo-light.svg" alt="" /> -->
                 </a>
               </li>
             </ul>
@@ -296,5 +313,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <div class="form-container"></div>
+        <button type="submit" class="button form__btn-submit modal-btn-close">Записатись безкоштовно</button>
+      </div>
+    </div>
+    <script src="./script/modal.js"></script>
   </body>
 </html>

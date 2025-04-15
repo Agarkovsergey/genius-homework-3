@@ -41,6 +41,11 @@ header {
             &:not(:last-child) {
               margin-right: 32px;
             }
+            &:hover {
+              .icon {
+                fill: $accent-color;
+              }
+            }
           }
         }
       }
