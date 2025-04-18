@@ -12,6 +12,11 @@ header {
     align-items: center;
     .logo-container {
       margin-right: 240px;
+      .logo-container__link {
+        .icon {
+          fill: $accent-color;
+        }
+      }
     }
     .menu-container {
       display: flex;

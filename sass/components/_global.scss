@@ -117,6 +117,7 @@ address {
 }
 .button {
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  cursor: pointer;
   &:hover,
   &:focus {
     background-color: $accent-color;

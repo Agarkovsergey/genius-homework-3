@@ -13,6 +13,12 @@
       }
     }
     .form-container {
+      border-radius: 32px;
+      background: url(./../images/form_bg.png);
+      background-repeat: no-repeat;
+      background-color: #011c44;
+      padding: 48px 56px;
+
       .form {
         display: flex;
         flex-direction: column;
@@ -45,12 +51,6 @@
           display: none;
         }
       }
-
-      border-radius: 32px;
-      background: url(./../images/form_bg.png);
-      background-repeat: no-repeat;
-      background-color: #011c44;
-      padding: 48px 56px;
 
       .form__btn-submit {
         width: 281px;

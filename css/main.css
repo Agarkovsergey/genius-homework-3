@@ -159,6 +159,7 @@ address {
 .button {
   -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  cursor: pointer;
 }
 .button:hover, .button:focus {
   background-color: #2b7fff;
@@ -189,6 +190,9 @@ header .container {
 }
 header .container .logo-container {
   margin-right: 240px;
+}
+header .container .logo-container .logo-container__link .icon {
+  fill: #2b7fff;
 }
 header .container .menu-container {
   display: -webkit-box;
@@ -679,7 +683,6 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
   opacity: 1;
   -webkit-transition: opacity 250ms ease-in;
   transition: opacity 250ms ease-in;
-  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -693,7 +696,6 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
   position: absolute;
   top: 50px;
   left: 50%;
-  width: 50%;
   max-width: 723px;
   border-radius: 38px;
   background-color: #ffffff;
@@ -703,4 +705,103 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+.backdrop .modal .form-container {
+  border-radius: 32px;
+  background: url(./../images/form_bg.png);
+  background-repeat: no-repeat;
+  background-color: #011c44;
+  padding: 42px 144px;
+}
+.backdrop .modal .form-container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.backdrop .modal .form-container .form .modal__form-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.backdrop .modal .form-container .form h2 {
+  color: #ffffff;
+  font-family: Play;
+  font-size: 64px;
+  line-height: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.backdrop .modal .form-container .form h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 32px;
+  max-width: 274px;
+  text-align: center;
+}
+.backdrop .modal .form-container .form h3 span {
+  color: #2b7fff;
+}
+.backdrop .modal .form-container .form input {
+  width: 310px;
+  height: 52px;
+  border-radius: 32px;
+  border: 2px solid #747272;
+  background: transparent;
+  padding: 18px 32px;
+  margin-bottom: 24px;
+}
+.backdrop .modal .form-container .form label {
+  display: none;
+}
+.backdrop .modal .form-container .form__btn-submit {
+  width: 281px;
+  height: 53px;
+  border-radius: 32px;
+  margin-bottom: 8px;
+  border: 1px solid #2b7fff;
+  background-color: #2b7fff;
+  color: #ffffff;
+}
+.backdrop .modal .form-container .form__btn-submit:hover {
+  background-color: #ffffff;
+  color: #2b7fff;
+}
+.backdrop .modal .form-container .copyrights {
+  color: #747272;
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 213px;
+  text-align: center;
+}
+.backdrop .modal .form-container .copyrights a {
+  color: #747272;
+  text-decoration: underline;
+}
+.backdrop .modal .close_modal {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+.backdrop .modal .close_modal button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.backdrop .modal .close_modal button .close_btn {
+  fill: #ffffff;
+}
+.backdrop .modal .close_modal button .close_btn:hover {
+  fill: #2b7fff;
 }/*# sourceMappingURL=main.css.map */
