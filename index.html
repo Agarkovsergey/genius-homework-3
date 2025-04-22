@@ -217,13 +217,16 @@
             <form action="" class="form">
               <h3>Запишіться <span class="accent">безкоштовно </span>та отримайте подарунок</h3>
               <div class="find-us__form-wraper">
-                <label class="find-us__join" for="firstName">Ваше ім'я та прізвище</label>
+                <label class="find-us__join" for="fullname">Ваше ім'я та прізвище</label>
                 <input
                   type="text"
-                  name="firstName"
-                  id="firstName"
+                  name="fullname"
+                  id="fullname"
                   placeholder="Ваше ім'я та прізвище"
                   class="find-us__input"
+                  pattern="^[А-Яа-яЇїA-Za-z]+ [А-Яа-яЇїA-Za-z]+$"
+                  title="Введіть два слова: ім'я та прізвище, розділені пробілом"
+                  required
                 />
                 <label class="find-us__join" for="phoneNumber">Ваш номер телефону</label>
                 <input
@@ -232,6 +235,9 @@
                   id="phoneNumber"
                   placeholder="Ваш номер телефону"
                   class="find-us__input"
+                  pattern="^\+380\d{9}$"
+                  title="Формат: +380XXXXXXXXX"
+                  required
                 />
                 <label class="find-us__join" for="yourEmail">Ваша електронна пошта</label>
                 <input
@@ -240,7 +246,9 @@
                   id="yourEmail"
                   placeholder="Ваша електронна пошта"
                   class="find-us__input"
+                  required
                 />
+                <input type="submit" value="Отправить" />
               </div>
               <button type="submit" class="button form__btn-submit">Записатись безкоштовно</button>
               <p class="copyrights">
@@ -313,37 +321,43 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden"> -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <div class="form-container">
           <form action="" class="form">
             <h2>Замовити дзвінок</h2>
             <h3>Запишіться <span class="accent">безкоштовно </span>та отримайте подарунок</h3>
             <div class="modal__form-wraper">
-              <label class="modal__join" for="firstName">Ваше ім'я та прізвище</label>
+              <label class="modal__join" for="fullname">Ваше ім'я та прізвище</label>
               <input
                 type="text"
-                name="firstName"
-                id="firstName"
+                name="fullname"
+                id="fullnameModal"
                 placeholder="Ваше ім'я та прізвище"
                 class="modal__input"
+                pattern="^[А-Яа-яЇїA-Za-z]+ [А-Яа-яЇїA-Za-z]+$"
+                title="Введіть два слова: ім'я та прізвище, розділені пробілом"
+                required
               />
               <label class="modal__join" for="phoneNumber">Ваш номер телефону</label>
               <input
                 type="tel"
                 name="phoneNumber"
-                id="phoneNumber"
+                id="phoneNumberModal"
                 placeholder="Ваш номер телефону"
                 class="modal__input"
+                pattern="^\+380\d{9}$"
+                title="Формат: +380XXXXXXXXX"
+                required
               />
               <label class="modal__join" for="yourEmail">Ваша електронна пошта</label>
               <input
                 type="email"
                 name="yourEmail"
-                id="yourEmail"
+                id="yourEmailModal"
                 placeholder="Ваша електронна пошта"
                 class="modal__input"
+                required
               />
             </div>
             <button type="submit" class="button form__btn-submit">Записатись безкоштовно</button>

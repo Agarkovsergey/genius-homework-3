@@ -462,13 +462,20 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 32px;
 }
 .our-procedures .content-wraper .slider-content {
   position: relative;
+  -ms-flex-preferred-size: calc(33.3333333333% - 17px);
+      flex-basis: calc(33.3333333333% - 17px);
 }
-.our-procedures .content-wraper .slider-content:not(:last-child) {
+.our-procedures .content-wraper .slider-content:not(:nth-child(3n)) {
   margin-right: 16px;
+}
+.our-procedures .content-wraper .slider-content:not(:nth-last-child(-n+3)) {
+  margin-bottom: 15px;
 }
 .our-procedures .content-wraper .slider-content:after {
   content: "";
@@ -491,7 +498,7 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
   border-bottom-right-radius: 4px;
   position: relative;
 }
-.our-procedures .content-wraper .slider-content-text {
+.our-procedures .content-wraper .slider-content .slider-content-text {
   position: absolute;
   bottom: 1%;
   left: 50%;
@@ -582,6 +589,7 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
   color: #2b7fff;
 }
 .find-us .container .form-container .form input {
+  color: #ffffff;
   width: 310px;
   height: 52px;
   border-radius: 32px;
@@ -754,6 +762,7 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
   color: #2b7fff;
 }
 .backdrop .modal .form-container .form input {
+  color: #ffffff;
   width: 310px;
   height: 52px;
   border-radius: 32px;
