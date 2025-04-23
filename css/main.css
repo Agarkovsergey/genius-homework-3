@@ -339,6 +339,9 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
 .features .container .features-info h2 {
   text-align: left;
 }
+.features .container .features-info h2 span {
+  text-transform: capitalize;
+}
 .features .container .features-info .features-text {
   font-size: 22px;
   line-height: 1.7;
@@ -364,40 +367,46 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
   position: absolute;
   top: 50%;
   left: 28%;
+}
+.features .container .features_image .star_one img {
   -webkit-animation-name: rotatescalebox;
           animation-name: rotatescalebox;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .features .container .features_image .star_two {
   position: absolute;
   top: 9%;
   left: 83%;
+}
+.features .container .features_image .star_two img {
   -webkit-animation-name: rotatescalebox;
           animation-name: rotatescalebox;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .features .container .features_image .star_three {
   position: absolute;
   top: 39%;
   left: 78%;
+}
+.features .container .features_image .star_three img {
   -webkit-animation-name: rotatescalebox;
           animation-name: rotatescalebox;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .features .container .features_image .features_image__item img {
   border-radius: 50%;
@@ -500,7 +509,7 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
 }
 .our-procedures .content-wraper .slider-content .slider-content-text {
   position: absolute;
-  bottom: 1%;
+  bottom: 2.5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -669,13 +678,13 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
   color: #2b7fff;
   font-weight: 700;
 }
-.footer .copy :first-child {
+.footer .copy .copy__item:first-child {
   color: #ffffff;
   font-size: 16px;
   line-height: 1;
   margin-bottom: 16px;
 }
-.footer .copy :last-child {
+.footer .copy .copy__item:last-child {
   font-size: 13px;
   line-height: 1;
   color: #747272;

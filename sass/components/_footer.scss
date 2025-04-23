@@ -56,16 +56,18 @@
     }
   }
   .copy {
-    :first-child {
-      color: $white-color;
-      font-size: 16px;
-      line-height: 1;
-      margin-bottom: 16px;
-    }
-    :last-child {
-      font-size: 13px;
-      line-height: 1;
-      color: $grey-color;
+    .copy__item {
+      &:first-child {
+        color: $white-color;
+        font-size: 16px;
+        line-height: 1;
+        margin-bottom: 16px;
+      }
+      &:last-child {
+        font-size: 13px;
+        line-height: 1;
+        color: $grey-color;
+      }
     }
   }
 }
