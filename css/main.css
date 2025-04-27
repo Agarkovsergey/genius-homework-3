@@ -371,10 +371,10 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
 .features .container .features_image .star_one img {
   -webkit-animation-name: rotatescalebox;
           animation-name: rotatescalebox;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -509,8 +509,8 @@ header .container .menu-container .socials .socials__list .socials__item:hover .
 }
 .our-procedures .content-wraper .slider-content .slider-content-text {
   position: absolute;
-  bottom: 2.5%;
-  left: 50%;
+  bottom: 5%;
+  left: 55%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 50%;
